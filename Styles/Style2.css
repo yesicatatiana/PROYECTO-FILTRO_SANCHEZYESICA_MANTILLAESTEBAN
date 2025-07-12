@@ -1,0 +1,46 @@
+@font-face {
+    font-family: MYA;
+    src: url(/fonts/MyriadPro/MYRIADPRO-REGULAR.OTF);
+}
+body{
+
+    font-family: MYA;
+    margin: 0%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: center center;
+
+    
+}
+.añadir{
+    display: flex;
+    
+}
+
+.foto {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+.cabecera {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+p{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+.refrescar{
+    display: flex;
+}
+.delete{
+    display: flex;
+}
+
+

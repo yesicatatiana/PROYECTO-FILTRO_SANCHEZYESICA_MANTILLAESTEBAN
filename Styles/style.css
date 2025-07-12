@@ -14,7 +14,7 @@ body{
     top: 19vw;
     left: 2vw;
     opacity: 0;
-    animation: img1 3s 1;
+    animation: img1 3s 2;
     
 }
 @media screen {
