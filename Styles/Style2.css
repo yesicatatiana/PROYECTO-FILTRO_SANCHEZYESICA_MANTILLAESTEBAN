@@ -42,5 +42,17 @@ p{
 .delete{
     display: flex;
 }
+.bug{
+    display: flex;
+}
+.ayuda{
+    display: flex;
+}
+
+
+
+@media only screen and (max-width:600px){
+
+}
 
 
