@@ -2,40 +2,55 @@
     font-family: MYA;
     src: url(/fonts/MyriadPro/MYRIADPRO-REGULAR.OTF);
 }
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 body{
 
     font-family: MYA;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background: center center;
+    overflow: hidden;
 
     
 }
 .añadir{
     display: flex;
-    width: 3rem;
+    width: fit-content;
     height: 3rem;
     align-items: center;
 }
 
 .foto {
     display: flex;
-    width: 3rem;
     height: 3rem;
     align-items: center;
 }
 .cabecera {
     margin-top: 1rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 p{
     margin-left: 0.5rem;
@@ -43,34 +58,35 @@ p{
 }
 .refrescar{
     display: flex;
-    width: 3rem;
+    width: fit-content;
     height: 3rem;
     align-items: center;
 }
 .delete{
     display: flex;
-    width: 3rem;
+    width: fit-content;
     height: 3rem;
     align-items: center;
 }
 .bug{
     display: flex;
-    width: 3rem;
+    width: fit-content;
     height: 3rem;
     align-items: center;
 }
 .ayuda{
     display: flex;
-    width: 3rem;
+    width: fit-content;
     height: 3rem;
     align-items: center;
 }
 .ajustes{
     margin: 2px;
-    gap: 30px;
+    gap: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: fit-content;
     
 }
 .pedro{
@@ -84,23 +100,23 @@ p{
    
 }
 hr{
-    margin: 1.5;
-    width: 116rem;
+    margin: 1.5rem;
+    width: 100vw;
 }
 .indicadores{
-    height: 4rem;
-    width: 100em;
+    height: 2.5rem;
+    width: 90%;
     border:1px solid black;
     position: relative;   
     border-radius: 5rem;
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .titulo{
-    margin: 1%;
+    margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
