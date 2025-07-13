@@ -10,17 +10,16 @@ body {
     background-position: center center;
     background-size: cover;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
     display: flex;
 }
 
-.img-1 {
-    position: relative;
+/*.img-1 {
+    position: absolute;
     display: flex;
     width: 10vw;
     height: 10vw;
-    text-align: center;
+    right: 38rem;
     margin: auto;
     margin-top: 18vw;
     opacity: 0;
@@ -31,25 +30,34 @@ body {
     0% {
         opacity: 0;
     }
-    30%{
+    50% {
         opacity: 1;
     }
-    50% {
+    100% {
         opacity: 0;
     }
-}
-
+}*/
 
 .seccion {
     justify-content: center;
     display: flex;
     background-color: white;
-    width: 59rem;
-    height: 45rem;
-    border-radius: 4rem;
-    margin-top: 6rem;
+    width: 44rem;
+    height: 29rem;
+    border-radius: 3rem;
+    margin-top: 4rem;
     opacity: 0;
-    animation: seccion 10s 1;
+    animation: seccion 2s forwards;
+    animation-delay: ;
+}
+
+@keyframes seccion{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .logo1 {
@@ -58,70 +66,22 @@ body {
     width: 6rem;
     margin-top: 2rem;
     margin-left: 20rem;
-    }
+}
 
-    .texto {
-        display: flex;
-        margin-top: 1rem;
-        font-size: 2rem;
-        text-align: center;
-        margin-left: 11rem;
-        font-family: let;
-    }
-
-    .contenido {
-        display: flex;
-        flex-direction: column;
-        font-family: let;
-    }
-
-    .parrafo {
-        display: flex;
-        font-size: 1rem;
-        text-align: center;
-        margin-left: 10rem;
-        font-family: let;
-        margin-top: -1rem;
-    }
-    
-.usuario {
+.texto {
     display: flex;
-    font-size: 20px;
+    margin-top: 1rem;
+    font-size: 2rem;
     text-align: center;
+    margin-left: 11rem;
     font-family: let;
-    margin-top: 1rem;
 }
 
-.usu {
-    border-radius: 2rem;
-    width: 43rem;
-    height: 3rem;
-}
-
-.usua {
-    border-radius: 2rem;
-    width: 43rem;
-    height: 3rem;
-}
-
-.btn {    
-    border-radius: 2rem;
-    width: 17rem;
-    height: 3rem;
-    margin-left: 15rem;
-    margin-top: 1rem;
-}
-
-.fin {
-    margin-top:3rem;
-}
-
-
-@keyframes seccion{
-    51% {
-        opacity: 0;
+.texto {
+    display: flex;
+    margin-top: 1rem
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 11rem;
+    font-family: let;
     }
-    100%{
-        opacity: 1;
-    }
-}
