@@ -4,7 +4,7 @@
 }
 
 body { 
-    background-image: url("../images/pexels-pixabay-159400@2x.png" );
+    background-image: url("/images/pexels-pixabay-159400@2x.png" );
     background-color: black;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,62 +22,106 @@ body {
     height: 10vw;
     text-align: center;
     margin: auto;
-    margin-top: auto;
-    top: 19vw;
-    left: 2vw;
+    margin-top: 18vw;
     opacity: 0;
     animation: img1 3s 2;
 }
-@media screen {
-    
-}
+
 @keyframes img1{
     0% {
         opacity: 0;
     }
-    50%{
+    30%{
         opacity: 1;
     }
-    100% {
+    50% {
         opacity: 0;
     }
 }
 
+
 .seccion {
-    align-items: top;
     justify-content: center;
     display: flex;
     background-color: white;
-    width: 250rem;
-    height: 180rem;
-    border-radius: 14rem;
-    margin-top: -16rem;
-    inline-size: center;
-    
+    width: 59rem;
+    height: 45rem;
+    border-radius: 4rem;
+    margin-top: 6rem;
+    opacity: 0;
+    animation: seccion 10s 1;
 }
 
 .logo1 {
     display: flex;
-    height: 35rem;
-    width: 30rem;
-    margin-top: 10rem;
-    margin-left: 55rem;
+    height: 7rem;
+    width: 6rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
     }
 
-.texto {
+    .texto {
+        display: flex;
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 11rem;
+        font-family: let;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        font-family: let;
+    }
+
+    .parrafo {
+        display: flex;
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 10rem;
+        font-family: let;
+        margin-top: -1rem;
+    }
+    
+.usuario {
     display: flex;
-    margin-top: 4rem;
-    font-size: 10rem;
-    display: block;
+    font-size: 20px;
     text-align: center;
-    margin-left: 10rem;
     font-family: let;
+    margin-top: 1rem;
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    font-family: let;
+.usu {
+    border-radius: 2rem;
+    width: 43rem;
+    height: 3rem;
 }
 
-.parrafo
+.usua {
+    border-radius: 2rem;
+    width: 43rem;
+    height: 3rem;
+}
+
+.btn {    
+    border-radius: 2rem;
+    width: 17rem;
+    height: 3rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+
+.fin {
+    margin-top:3rem;
+}
+
+
+@keyframes seccion{
+    51% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
