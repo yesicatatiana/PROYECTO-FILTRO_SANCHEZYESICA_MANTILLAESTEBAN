@@ -3,6 +3,10 @@
     src: url(../MyriadPro/MyriadPro-Light.otf);
 }
 
+* {
+    font-family: let;
+}
+
 body { 
     background-image: url("/images/pexels-pixabay-159400@2x.png" );
     background-color: black;
@@ -43,12 +47,12 @@ body {
     display: flex;
     background-color: white;
     width: 44rem;
-    height: 29rem;
+    height: 34.5rem;
     border-radius: 3rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     opacity: 0;
     animation: seccion 2s forwards;
-    animation-delay: ;
+    animation-delay: 0.1s;
 }
 
 @keyframes seccion{
@@ -62,26 +66,82 @@ body {
 
 .logo1 {
     display: flex;
-    height: 7rem;
-    width: 6rem;
-    margin-top: 2rem;
-    margin-left: 20rem;
+    height: 5rem;
+    width: 4.5rem;
+    margin-top: 1.5rem;
+    margin-left: 18rem;
 }
 
 .texto {
     display: flex;
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: 9rem;
+    font-family: let;
+}
+
+.parrafo {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 8rem;
+    font-family: let;
+    margin-top: -1rem;
+}
+
+.usuario {
+    display: flex;
+    font-size: 1rem;
     margin-top: 1rem;
-    font-size: 2rem;
-    text-align: center;
-    margin-left: 11rem;
-    font-family: let;
+    margin-left: 4rem;
 }
 
-.texto {
+.usu {
+    border-radius: 0.8rem;
+    width: 35rem;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+.contraseña {
     display: flex;
-    margin-top: 1rem
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 3.5rem;    
+}
+
+.contra{
+    border-radius: 0.8rem;
+    width: 35rem;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-top: -1rem;    
+}
+
+#btn {
+    background-color: black;
+}
+
+.seccionpng2 {
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    width: 35rem;
+    height: 23rem;
+    border-radius: 3rem;
+    margin-top: 8rem;
+}
+
+.logopng2 {
+    display: flex;
+    height: 5rem;
+    width: 4.5rem;
+    margin-top: 1.5rem;
     margin-left: 11rem;
-    font-family: let;
-    }
+}
+
+.textopng2 {
+    
+}
