@@ -3,24 +3,15 @@
     src: url(/fonts/MyriadPro/MYRIADPRO-REGULAR.OTF);
 }
 
-*{
+* {
     box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 93vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-body{
-
-    font-family: MYA;
     margin: 0;
     padding: 0;
+}
+
+body {
+
+    font-family: MYA;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -31,9 +22,10 @@ body{
     background: center center;
     overflow: hidden;
 
-    
+
 }
-.añadir{
+
+.añadir {
     display: flex;
     width: fit-content;
     height: 1.5rem;
@@ -45,6 +37,7 @@ body{
     height: 2rem;
     align-items: center;
 }
+
 .cabecera {
     margin-top: 0.5rem;
     width: 100%;
@@ -55,134 +48,138 @@ body{
     align-items: center;
     gap: 2rem;
 }
-p{
-    margin-left: 0.5rem;
-    font-size: 1rem;
-}
-.refrescar{
+
+
+.refrescar {
     display: flex;
     width: fit-content;
     height: 1.5rem;
     align-items: center;
 }
-.delete{
+
+.delete {
     display: flex;
     width: fit-content;
     height: 1.5rem;
     align-items: center;
 }
-.bug{
+
+.bug {
     margin-top: 0.194rem;
     display: flex;
     width: fit-content;
     height: 1.6rem;
     align-items: center;
 }
-.ayuda{
+
+.ayuda {
     margin-top: 0.196rem;
     display: flex;
     width: fit-content;
     height: 1.6rem;
     align-items: center;
 }
-.ajustes{
+
+.ajustes {
     margin: 2px;
     gap: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: fit-content;
-    
+
 }
-.pedro{
+
+.pedro {
     width: 2.8rem;
     height: 2.8rem;
-    
+
 }
-.o{
+
+.o {
     width: fit-content;
     height: 1rem;
-   
+
 }
-hr{
+
+hr {
     margin: 1.5rem;
     margin-top: 0.1rem;
     width: 100vw;
 }
-.indicadores{
-    height: 2.7rem;
-    width: 90%;
-    border:1px solid black;
-    position: relative;   
-    border-radius: 5rem;
+
+.container {
+    width: 100%;
+
+    height: 93vh;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0.5rem auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-.titulo{
+.indicadorespro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cont-bonito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.indicadores,
+.container-sub-text {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    font-size: 2.2em;
+}
+
+.titulo {
     margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: -1.5rem;
+    margin-top: 1.5rem;
+    font-size: 5rem;
 }
-.subtitulo{
-    margin-top: 0rem;
-}
-.indicadorespro{
-    width: 100%;
-}
-.indicadorespro p{
-    display: inline;
-    margin-right: 3.5rem;
-}
-.t{
-    display: inline;
-}
-.t p{
-    display: inline;
-    margin-right: 1rem;
-}
-.indicadores p{
-    display: inline;
-    margin-right: 2rem;
-    margin-top: 0.7rem;
-}
-.tt{
-    display: inline;
-    margin-top: 0.78rem;
-}
-.tt p{
-    display: inline;
-    margin-right: 3.5rem;
 
+.subtitulo {
+    margin-top: 1rem;
+    font-size: 2rem;
 }
-.FUNA{
-    height: 2.7rem;
-    width: 20%;
-    background-color: rgb(255, 111, 44);
-    border:1px solid black;
-    position: relative;   
+.indicadores{
+    border: 1px solid black;
+    margin:1rem;
     border-radius: 5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0.5rem auto;
+}
+
+
+.indicadores p{
+
+}
+
+.FUNA {
+    padding: 2.5em;
+    background-color: rgb(255, 111, 44);
+    border: 1px solid black;
+    border-radius: 7rem;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2vw;
 }
-.FUNA p{
-   color: white;
-   margin-top: 0.7rem;
-}
 
-
-
-
-
-@media only screen and (max-width:600px){
-
+.FUNA a{
+    color: white;
+    font-size: 4em;
 }
 
 
+
+
+
+@media only screen and (max-width:600px) {}
