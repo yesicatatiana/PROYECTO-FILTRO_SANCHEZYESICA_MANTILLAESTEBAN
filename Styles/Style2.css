@@ -47,6 +47,7 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+    border-bottom: solid 1px;
 }
 
 
@@ -110,7 +111,6 @@ hr {
 
 .container {
     width: 100%;
-
     height: 93vh;
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ hr {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    font-size: 2.2em;
+    font-size: 2.2rem;
 }
 
 .titulo {
@@ -148,22 +148,17 @@ hr {
 }
 
 .subtitulo {
-    margin-top: 1rem;
+    margin-top: 1vw;
     font-size: 2rem;
 }
 .indicadores{
     border: 1px solid black;
-    margin:1rem;
+    margin:1vw;
     border-radius: 5rem;
 }
 
-
-.indicadores p{
-
-}
-
 .FUNA {
-    padding: 2.5em;
+    padding: 2.5rem;
     background-color: rgb(255, 111, 44);
     border: 1px solid black;
     border-radius: 7rem;
@@ -175,11 +170,97 @@ hr {
 
 .FUNA a{
     color: white;
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 
 
 
 
-@media only screen and (max-width:600px) {}
+
+/*ESTILOS PARA PANTALLAS GRANDES*/
+
+@media screen and (min-width: 1024px) {
+  .container-sub-text,
+  .indicadores {
+    grid-template-columns: repeat(9, 1fr);
+    font-size: 1rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+  .subtitulo{
+    font-size: 1rem;
+  }
+
+  .cabecera {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .FUNA a{
+    color: white;
+    font-size: 1.5rem;
+}
+}
+
+
+
+/*ESTILOS PARA IPHONE 14 PRO MAX*/
+
+@media screen and (max-width: 430px) {
+
+  .container-sub-text,
+  .indicadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+    font-size: 3.5vw;
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  .indicadorespro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-bonito {
+    width: 95%;
+    margin: auto;
+  }
+
+  .titulo {
+    font-size: 6vw;
+    margin: 1rem 0;
+  }
+
+  .subtitulo {
+    font-size: 4vw;
+    padding: 0 1rem;
+  }
+
+  .cabecera {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .FUNA {
+    width: 90%;
+    font-size: 4vw;
+    padding: 0.7rem;
+  }
+
+  .indicadores p {
+    margin: 0.2rem 0;
+  }
+
+  .container-sub-text p {
+    font-weight: bold;
+  }
+}
