@@ -3,12 +3,18 @@
     src: url(/fonts/MyriadPro/MYRIADPRO-REGULAR.OTF);
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+.container {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 body {
 
     font-family: MYA;
@@ -23,9 +29,9 @@ body {
     overflow: hidden;
 
 
-}
+} 
 
-.añadir {
+.añadir{
     display: flex;
     width: fit-content;
     height: 1.5rem;
@@ -37,7 +43,6 @@ body {
     height: 2rem;
     align-items: center;
 }
-
 .cabecera {
     margin-top: 0.5rem;
     width: 100%;
@@ -49,110 +54,77 @@ body {
     gap: 2rem;
     border-bottom: solid 1px;
 }
-
-
-.refrescar {
+.refrescar{
     display: flex;
     width: fit-content;
     height: 1.5rem;
     align-items: center;
 }
-
-.delete {
+.delete{
     display: flex;
     width: fit-content;
     height: 1.5rem;
     align-items: center;
 }
-
-.bug {
+.bug{
     margin-top: 0.194rem;
     display: flex;
     width: fit-content;
     height: 1.6rem;
     align-items: center;
 }
-
-.ayuda {
+.ayuda{
     margin-top: 0.196rem;
     display: flex;
     width: fit-content;
     height: 1.6rem;
     align-items: center;
 }
-
-.ajustes {
+.ajustes{
     margin: 2px;
     gap: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: fit-content;
-
+    
 }
-
-.pedro {
+.pedro{
     width: 2.8rem;
     height: 2.8rem;
-
+    
 }
-
-.o {
+.o{
     width: fit-content;
     height: 1rem;
-
+   
 }
-
-
-
-.container {
-    width: 100%;
-    height: 93vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.indicadorespro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.cont-bonito{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-.indicadores,
-.container-sub-text {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    font-size: 2.2rem;
-}
-
 .titulo {
     margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 5rem;
-}
-
-.subtitulo {
-    margin-top: 1vw;
     font-size: 2rem;
 }
 .indicadores{
-    border: 1px solid black;
-    margin:1vw;
+    height: 2rem;
+    width: 90%;
+    border:1px solid black;
+    position: relative;   
     border-radius: 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+    padding-left: 10px;
 }
-
+label{
+    display: block;
+    margin-left: 0.5rem;
+    width: 90%;
+    text-align: left;
+}
 .FUNA {
     padding: 2.5rem;
     background-color: rgb(255, 111, 44);
@@ -166,97 +138,58 @@ body {
 
 .FUNA a{
     color: white;
-    font-size: 4rem;
-}
-
-
-
-
-
-
-/*ESTILOS PARA PANTALLAS GRANDES*/
-
-@media screen and (min-width: 1024px) {
-  .container-sub-text,
-  .indicadores {
-    grid-template-columns: repeat(9, 1fr);
-    font-size: 1rem;
-  }
-
-  .titulo {
-    font-size: 2rem;
-  }
-  .subtitulo{
-    font-size: 1rem;
-  }
-
-  .cabecera {
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 2rem;
-  }
-  .FUNA a{
-    color: white;
     font-size: 1.5rem;
 }
+.indicador{
+    height: 2.5rem;
+    width: 15%;
+    max-width: 600px;
+    border: 1px solid black;
+    border-radius: 5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    margin: 0.5rem 0 1rem 0;
 }
-
-
-
-/*ESTILOS PARA IPHONE 14 PRO MAX*/
-
-@media screen and (max-width: 430px) {
-
-  .container-sub-text,
-  .indicadores {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.5rem;
-    column-gap: 1rem;
-    font-size: 3.5vw;
-    text-align: left;
-    padding: 0.5rem;
-  }
-
-  .indicadorespro {
+.container2 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
+    padding-left: 5%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 430px) {
+  .container {
+    padding: 1rem;
+    height: auto;
   }
 
-  .cont-bonito {
-    width: 95%;
-    margin: auto;
+  input.indicadores {
+    font-size: 0.9rem;
+    width: 100%;
   }
 
-  .titulo {
-    font-size: 6vw;
-    margin: 1rem 0;
-  }
-
-  .subtitulo {
-    font-size: 4vw;
-    padding: 0 1rem;
-  }
-
-  .cabecera {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+  label {
+    width: 100%;
+    font-size: 0.95rem;
   }
 
   .FUNA {
     width: 90%;
-    font-size: 4vw;
-    padding: 0.7rem;
+    font-size: 1rem;
+    padding: 1rem;
   }
 
-  .indicadores p {
-    margin: 0.2rem 0;
-  }
-
-  .container-sub-text p {
-    font-weight: bold;
+  .titulo {
+    font-size: 1.5rem;
   }
 }
