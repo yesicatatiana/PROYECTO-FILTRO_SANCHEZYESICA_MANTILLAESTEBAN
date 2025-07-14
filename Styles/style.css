@@ -16,19 +16,25 @@ body {
     align-items: center;
     flex-direction: column;
     display: flex;
+    width: 100vw;
+    height: auto;
 }
-
+ .contenedor-grid{
+    display: grid;
+    grid-template-columns: auto;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+ }
 .img-1 {
-    position: absolute;
-    display: flex;
     width: 10vw;
     height: 10vw;
-    right: 38rem;
     margin: auto;
-    margin-top: 18vw;
     opacity: 0;
     animation: img1 4s 2;
-}
+    grid-column: 1;
+    grid-row: 1;}
 
 @keyframes img1{
     0% {
@@ -53,6 +59,8 @@ body {
     opacity: 0;
     animation: seccion 2s forwards;
     animation-delay: 8s;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 @keyframes seccion{
@@ -137,16 +145,27 @@ body {
     text-decoration: none;
 }
 
+.imgpng2 {
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    opacity: 0;
+    animation: img1 4s 1;
+    animation-delay: 3s;
+    grid-column: 1;
+    grid-row: 1;
+}
 .seccionpng2 {
     justify-content: center;
-    display: flex;
     background-color: white;
-    width: 37rem;
-    height: 23rem;
+    width: 40vw;
+    height: 40vh;
     border-radius: 3rem;
     margin-top: 8rem;
     opacity: 0;
-    animation: seccion2 3s ;
+    animation: seccion2 3s steps(1);
+    grid-column: 1;
+    grid-row: 1;
 }
 
 @keyframes seccion2{
@@ -165,8 +184,8 @@ body {
     display: flex;
     height: 5rem;
     width: 4.5rem;
-    margin-top: 1.5rem;
-    margin-left: 7rem;
+    margin-top: 2rem;
+    
 }
 
 .textopng2 {
@@ -176,29 +195,8 @@ body {
 
 .imgpe {
     width: 5rem;
-    margin-left: 6.7rem;
 }
 
-.parrafopng2 {
-    font-size: 1.5;
-}
-
-.usuadmi {
-    margin-left: 5rem;
-}
-
-.imgpng2 {
-    position: absolute;
-    display: flex;
-    width: 10vw;
-    height: 10vw;
-    right: 38rem;
-    margin: auto;
-    margin-top: 18vw;
-    opacity: 0;
-    animation: img1 4s 1;
-    animation-delay: 3s;
-}
 
 @keyframes imgpng2{
     0% {
@@ -210,4 +208,10 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+.contenidopng2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
