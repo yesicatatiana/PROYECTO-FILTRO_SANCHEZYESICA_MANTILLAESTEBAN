@@ -1,0 +1,51 @@
+@font-face {
+    font-family: let;
+    src: url(../MyriadPro/MyriadPro-Light.otf);
+}
+
+* {
+    font-family: let;
+}
+
+body { 
+    background-image: url("/images/pexels-pixabay-159400@2x.png" );
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.seccionpng5 {
+    justify-content: center;
+    background-color: white;
+    width: 45vw;
+    height: 55vh;
+    border-radius: 3rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.logo1 {
+    height: 5rem;
+    width: 4.5rem;
+    margin-top: 1.2rem;
+}
+
+
+.texto {
+    font-size: 1.4rem;
+}
+
+.imgpe5 {
+    width: 6rem;
+    margin-top: -1rem;
+}
+
+.parrafo {
+    font-size: 1.2rem;
+    font-family: let;
+}
+
