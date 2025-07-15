@@ -144,7 +144,7 @@ label{
     transition: all 0.3s ease-out;
 }
 .confirmacion{
-    position: relative;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -152,6 +152,13 @@ label{
     opacity: 1;
     visibility: hidden;
     background-color: aliceblue;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+
 }
 .confirmacion:target{
     visibility: visible;
@@ -159,11 +166,17 @@ label{
 }
 .modal{
     padding: 1rem;
-    background-color: white;
     border-radius: 3rem;
 }
 .modal h2{
     margin-top: 0;
+}
+.confirmarbot{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0% 20%;
 }
 
 
