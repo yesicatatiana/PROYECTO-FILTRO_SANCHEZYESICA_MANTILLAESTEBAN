@@ -17,16 +17,16 @@ body {
     flex-direction: column;
     display: flex;
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
- .contenedor-grid{
+.contenedor-grid{
     display: grid;
     grid-template-columns: auto;
     width: 100vw;
     height: 100vh;
     justify-items: center;
     align-items: center;
- }
+}
 .img-1 {
     width: 10vw;
     height: 10vw;
@@ -138,6 +138,9 @@ body {
     
 }
 
+
+/* styles del index-2 */
+
 .ingresarpa {
     color: white;
     margin-left: 1.5rem;
@@ -163,7 +166,7 @@ body {
     border-radius: 3rem;
     margin-top: 8rem;
     opacity: 0;
-    animation: seccion2 3s steps(1);
+    animation: seccion2 4s steps(1);
     grid-column: 1;
     grid-row: 1;
 }
