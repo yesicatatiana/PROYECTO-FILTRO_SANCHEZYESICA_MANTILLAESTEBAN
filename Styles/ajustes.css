@@ -302,9 +302,27 @@ hr {
 .ediperfil {
     background-color: rgb(235, 79, 22);
     border-color: rgb(235, 79, 22);
+    border-radius: 0.5rem;
+    margin-left: 3rem;
+    width: 7rem;
+    color: white;
+}
+
+.cerrarstilo {
+    background-color: red;
+    border-color: red;
+    border-radius: 0.5rem;
+    width: 7rem;
+    text-align: center;
 }
 
 .cerrarsesion {
-    background-color: red;
-    border-color: red;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
 }
+
+
+
+
+
