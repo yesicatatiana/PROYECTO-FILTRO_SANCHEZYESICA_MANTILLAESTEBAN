@@ -13,4 +13,4 @@ Proyecto HTML Y CSS
 Hecho por [Estebanmantilla](https://algunapersonaenestemundo)[Yesicatatiana]
 
 
->Proyecto python.
+>Proyecto HTML Y CSS
