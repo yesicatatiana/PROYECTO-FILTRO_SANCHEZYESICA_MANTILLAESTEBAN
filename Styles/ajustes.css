@@ -270,3 +270,41 @@ hr {
 /* seccion de ajustes */
 
 
+.panelajustes {
+    position: fixed;
+    background-color: white;
+    border-color: 1rem solid rgb(0, 0, 0);
+    display: flex; 
+    width: 50rem;
+    height: 22rem;
+    border-radius: 1.5rem;
+    margin-top: -6.5rem;
+}
+
+.imgpanel {
+    height: 7rem;
+}
+
+.principal {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.principal2 {
+    margin-top: 9rem;
+    margin-left: -29rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.ediperfil {
+    background-color: rgb(235, 79, 22);
+    border-color: rgb(235, 79, 22);
+}
+
+.cerrarsesion {
+    background-color: red;
+    border-color: red;
+}
