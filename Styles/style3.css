@@ -140,6 +140,31 @@ label{
     color: white;
     font-size: 1.5rem;
 }
+.button{
+    transition: all 0.3s ease-out;
+}
+.confirmacion{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    visibility: hidden;
+    background-color: aliceblue;
+}
+.confirmacion:target{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+.modal h2{
+    margin-top: 0;
+}
 
 
 
